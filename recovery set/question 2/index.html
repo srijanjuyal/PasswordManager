@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery#2</title>
+    <style>
+        body{
+            background: rgb(241, 234, 188);
+            font-family: monospace;
+            font-size: 1.2em;
+        }
+        input:hover{
+            cursor: pointer;
+        }
+        .container{
+            margin-bottom: 25px;
+        }
+        .container span{
+            margin-left: 20px;
+            
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+            
+        }
+        .con{
+            border: solid black 5px;
+            width: 350px;
+            height: auto;
+            padding: 10px;
+            border-radius: 15px;
+            border-color: black;
+            background: rgba(255, 255, 255, 0.586);
+            -webkit-backdrop-filter: blur(100px);
+        }
+        .class{
+            padding-left: 10px;
+            padding-top: 10px;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.588);
+            font-style: normal;
+            font-weight: 900;
+        }
+        .new{
+            padding-left: 10px;
+            margin-top: 15%;
+        }
+        .but{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+        }
+        .b1{
+            border: solid;
+            margin-bottom: 5px;
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px 0px;
+            font-weight: bolder;
+            
+        }
+        .b1:hover{
+            cursor: pointer;
+        }
+        img{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <img src="1253083.jpg">
+    <div class="box">
+        <div class="con">
+            <div class="class">Password Recovery
+                <p>#2. What is your place of birth?</p>
+            </div>
+           <div class="new">
+            <div class="container"><input type="text" id="birth" required></div>
+           </div>
+           <div class="but">
+            <div class="b1">Previous</div>
+            <div class="b1">
+                <!--<a href="../question 3/index.html">Next</a>-->
+                <button onclick="inp()">Next</button>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+<script>
+    function inp()
+    {
+        let input=document.getElementById("birth").value;
+        var final="2";
+        var pass=sessionStorage.getItem("rec",final);
+        final=final+pass+input;
+        var pass=sessionStorage.setItem("rec",final);
+        window.open("../question 3/index.html", "_self");
+    }
+</script>
+</html>

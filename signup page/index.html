@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up </title>
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form>
+        <label>Enter Your Username</label>
+        <input type="text" placeholder="" id="user"/>
+        <label>Password</label>
+        <input type="password" placeholder="" id="password1"/>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="" id="password2"/>
+        <input type="button" value="Submit" onclick="create()"/>
+      <closeform></closeform></form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="../login page/index.html">Login here</a>
+    </p>
+  </body>
+  <script>
+    function create()
+    {
+      let user=document.getElementById("user").value;
+      let pass1=document.getElementById("password1").value;
+      let pass2=document.getElementById("password2").value;
+      if(pass1!=pass2)
+      {
+        alert("password not same");
+      }
+      else
+      {
+        var use=localStorage.setItem("usse",user);
+        var pa=localStorage.setItem("pww",pass1);
+        window.open("../recovery set/question 1/index.html", "_self");
+      }
+    }
+  </script>
+</html>

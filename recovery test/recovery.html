@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery</title>
+</head>
+<body>
+    <button onclick="showuser()">Show Username</button>
+    <button onclick="showpass()">Show Password</button>
+    <textarea cols="30" rows="2"></textarea>
+</body>
+<script>
+    function showpass()
+    {
+        var final="";
+        var pass=localStorage.getItem("reco",final);
+        var pas=sessionStorage.getItem("rec",final);
+        if(pas==pass)
+            var out=localStorage.getItem("pww",final);
+        let textarea=document.querySelector('textarea');
+        textarea.value=out;
+    }
+    function showuser()
+    {
+        var final="";
+        var pass=localStorage.getItem("reco",final);
+        var pas=sessionStorage.getItem("rec",final);
+        var out="";
+        if(pas==pass)
+            out=localStorage.getItem("usse",final);
+        else
+            out="not found"
+        let textarea=document.querySelector('textarea');
+        textarea.value=out;
+    }
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="platform">Platform</label>
+                        <input type="text" name="platform" id="platform">
+                    </div>
+                    <div>
+                        <label for="accountname">Account Name</label>
+                        <input type="text" name="accountname" id="accountname">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <div>
+                        <label for="notes">Notes</label>
+                        <input type="text" name="notes" id="notes">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thread>
+                            <tr>
+                                <th>Platform</th>
+                                <th>Account Name</th>
+                                <th>Password</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thread>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

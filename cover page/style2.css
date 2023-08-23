@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url(IMG_20230505_145730.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: black;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cyan;
+    border-radius: 5px;
+    margin-left: -120px;
+    margin-bottom: -180px;
+}
+
+.btn
+{
+    cursor: pointer;
+    background: black;
+    color: #fff;
+}

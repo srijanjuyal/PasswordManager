@@ -1,0 +1,79 @@
+body{
+    background-color: aquamarine;
+    background-image: url("Databaseimg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(88,44, 44, 0.8);
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    width: 90%;
+    border: 10px white;
+}
+
+table.list{
+
+}
+
+td{
+    border: 1px solid rgb(204,200,200)
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(85, 43, 114);
+}
+
+/*tr:nth-child(odd), table.list thread> tr{
+    background-color: rgb(88,44,44);
+}*/
+
+input[type="text"],input[type="number"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+    background: #4b99d8;
+}
+
+button{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background:#4b99d8 ;
+}
